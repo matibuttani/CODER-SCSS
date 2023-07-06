@@ -1,0 +1,78 @@
+/*------main index-----*/
+.tituloIndex {
+    height: 400px;
+    text-align: left;
+    background-image: url(../media/FND.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    font-family: $tipografia;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0px;
+
+    h1 {
+        font-size: 6rem;
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 2px $naranja;
+    }
+
+    p {
+        font-size: 3rem;
+        color: $naranja;
+        text-align: center;
+        text-shadow: 2px 2px 2px white;
+    }
+
+}
+
+/*presentacion*/
+
+.presentacion {
+    background-color: $negro;
+    font-size: 2rem;
+
+    h2 {
+        text-align: center;
+        text-decoration: underline;
+        color: $naranjita;
+        padding: 20px 0px;
+    }
+
+    .divPadreFlex {
+        @include flex (row, space-around, center);
+        text-align: center;
+        text-transform: uppercase;
+
+        p {
+            text-align: center;
+            color: $naranjita;
+            align-items: center;
+            padding: 20px;
+        }
+
+        img {
+            width: 200px;
+        }
+    }
+
+}
+
+/*Seccion Destacados*/
+
+.destacados {
+    margin-bottom: 20px;
+
+    h2 {
+        text-align: center;
+        color: $naranjita;
+        text-decoration: underline;
+        margin: 20px 0px;
+    }
+
+    .propia {
+        width: 80%;
+    }
+}

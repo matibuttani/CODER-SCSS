@@ -1,0 +1,28 @@
+
+/*-----PRODUCTOS-----*/
+.productos {
+    h1 {
+        text-align: center;
+        font-size: 5rem;
+        color: $naranjita;
+    }
+
+    .prodCafe1 {
+        border-radius: 11px 11px 11px 11px;
+        border: 3px solid $negro;
+        margin: 0 auto;
+        img{
+            height: 500px;
+        }
+    }
+    .prodCafe2{
+        @extend .prodCafe1
+    }
+    .prodCafe3{
+        @extend .prodCafe1
+    }
+    .prodCafe4{
+        @extend .prodCafe1
+    }
+
+}

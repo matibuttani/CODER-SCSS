@@ -1,0 +1,17 @@
+$gris: #464545;
+$negro: #2F2F2F;
+$negrooscuro: #1B1B1B;
+$naranja: #F54703;
+$naranjita: #FF7518;
+$tipografia: 'Roboto', sans-serif;
+
+//Mixin//
+
+@mixin flex ($direccion, $justify, $align){
+ display: flex;
+flex-direction: $direccion;
+justify-content: $justify;
+align-items: $align;
+}
+
+

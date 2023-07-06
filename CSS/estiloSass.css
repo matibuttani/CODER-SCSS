@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+/*HEADER*/
+header img, header footer div svg, footer div header svg {
+  width: 250px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+header .menu {
+  background-color: #FF7518;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+header .link {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: #2F2F2F;
+}
+
+/* FOOTER */
+footer {
+  background-color: #FF7518;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+footer .logoTelefono {
+  margin-left: 10px;
+  width: 50px;
+}
+footer div {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer div .iconoInsta {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 11px;
+  width: 50px;
+}
+footer div .iconoFb {
+  border-radius: 50%;
+  background-color: white;
+  border-radius: 32px;
+  width: 50px;
+}
+footer div img, footer div svg {
+  width: 50px;
+}
+/*------main index-----*/
+.tituloIndex {
+  height: 400px;
+  text-align: left;
+  background-image: url(../media/FND.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0px;
+}
+.tituloIndex h1 {
+  font-size: 6rem;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 2px #F54703;
+}
+.tituloIndex p {
+  font-size: 3rem;
+  color: #F54703;
+  text-align: center;
+  text-shadow: 2px 2px 2px white;
+}
+
+/*presentacion*/
+.presentacion {
+  background-color: #2F2F2F;
+  font-size: 2rem;
+}
+.presentacion h2 {
+  text-align: center;
+  text-decoration: underline;
+  color: #FF7518;
+  padding: 20px 0px;
+}
+.presentacion .divPadreFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+.presentacion .divPadreFlex p {
+  text-align: center;
+  color: #FF7518;
+  align-items: center;
+  padding: 20px;
+}
+.presentacion .divPadreFlex img, .presentacion .divPadreFlex footer div svg, footer div .presentacion .divPadreFlex svg {
+  width: 200px;
+}
+
+/*Seccion Destacados*/
+.destacados {
+  margin-bottom: 20px;
+}
+.destacados h2 {
+  text-align: center;
+  color: #FF7518;
+  text-decoration: underline;
+  margin: 20px 0px;
+}
+.destacados .propia {
+  width: 80%;
+}
+
+/*-----CONTACTO-----*/
+.container-form {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 20px;
+}
+.container-form .tituloContacto {
+  text-align: left;
+  font-size: 5rem;
+  color: #FF7518;
+}
+.container-form form, .container-form form textarea, .container-form form .campo textarea, .container-form form textarea textarea, .container-form form .campo {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 15px;
+  border: 1px solid #F54703;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px;
+}
+.container-form form textarea, .container-form form textarea textarea, .container-form form textarea textarea textarea, .container-form form .campo textarea {
+  max-width: 530px;
+  min-width: 530px;
+  min-height: 140px;
+  max-height: 150px;
+}
+.container-form form .btn-enviar {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background: #F54703;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+/*-----SOBRE NSTROS-----*/
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: 25% 40% 25%;
+  grid-template-rows: 150px 200px 200px 200px 150px;
+  grid-template-areas: "titulo titulo titulo" "foto1 texto1 texto1" "foto1 foto2 foto2" "texto2 foto3 texto3" "subt subt subt";
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  row-gap: 5px;
+  column-gap: 3px;
+}
+.contenedor-grid h1 {
+  grid-area: titulo;
+  font-size: 50px;
+  color: #FF7518;
+}
+.contenedor-grid img, .contenedor-grid footer div svg, footer div .contenedor-grid svg {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 36px 4px rgba(0, 0, 0, 0.75);
+}
+.contenedor-grid .grid-img-1 {
+  grid-area: foto1;
+}
+.contenedor-grid .grid-texto-1 {
+  grid-area: texto1;
+}
+.contenedor-grid .grid-img-2 {
+  grid-area: foto2;
+}
+.contenedor-grid .grid-texto-2 {
+  grid-area: texto2;
+}
+.contenedor-grid .grid-img-3 {
+  grid-area: foto3;
+}
+.contenedor-grid .grid-texto-3 {
+  grid-area: texto3;
+}
+.contenedor-grid .grid-h2 {
+  grid-area: subt;
+  text-align: center;
+  color: #464545;
+}
+.contenedor-grid span {
+  color: #FF7518;
+}
+
+/*-----PRODUCTOS-----*/
+.productos h1 {
+  text-align: center;
+  font-size: 5rem;
+  color: #FF7518;
+}
+.productos .prodCafe1, .productos .prodCafe4, .productos .prodCafe3, .productos .prodCafe2 {
+  border-radius: 11px 11px 11px 11px;
+  border: 3px solid #2F2F2F;
+  margin: 0 auto;
+}
+.productos .prodCafe1 img, .productos .prodCafe4 img, .productos .prodCafe3 img, .productos .prodCafe2 img, .productos .prodCafe1 footer div svg, .productos .prodCafe4 footer div svg, .productos .prodCafe3 footer div svg, .productos .prodCafe2 footer div svg, footer div .productos .prodCafe1 svg, footer div .productos .prodCafe4 svg, footer div .productos .prodCafe3 svg, footer div .productos .prodCafe2 svg {
+  height: 500px;
+}
+/*------MOBILE------*/
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: #F9A826;
+  }
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+  nav {
+    width: 100%;
+  }
+  header ul a {
+    font-size: 1.5rem;
+  }
+  /* section "Menu" */
+  .tituloIndex {
+    height: 200px;
+  }
+  .tituloIndex h1 {
+    font-size: 25px;
+  }
+  .tituloIndex p {
+    font-size: 15px;
+  }
+  .presentacion img, .presentacion footer div svg, footer div .presentacion svg {
+    width: 80px;
+  }
+  .presentacion p {
+    font-size: 15px;
+  }
+  .presentacion h2 {
+    font-size: 25px;
+  }
+  .destacados h2 {
+    font-size: 25px;
+  }
+  /* section "sobre nosotros"*/
+  .contenedor-grid {
+    grid-template-areas: "titulo" "foto1" "texto1" "texto2" "foto3" "texto3" "subt";
+    grid-template-columns: 90%;
+    grid-template-rows: 150px 350px 200px 100px 100px 100px 300px;
+  }
+  .grid-img-2 {
+    display: none;
+  }
+  /*FOOTER MOBILE*/
+  footer img, footer div svg, svg {
+    width: 40px;
+  }
+  footer div {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer p {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=estiloSass.css.map */

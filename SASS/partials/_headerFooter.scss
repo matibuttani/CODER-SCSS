@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-family:'Roboto', sans-serif;
+  font-size: 62.5%;
+ }
+
+h2{
+  font-size: 4rem;
+}
+
+h3{
+  font-size: 3rem;
+}
+
+p{
+  font-size: 2rem;
+}
+
+
+/*HEADER*/
+header {
+  img {
+    width: 250px;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  .menu {
+    background-color: $naranjita;
+    font-family: $tipografia;
+    font-size: 2rem;
+
+  }
+
+  .link {
+    font-family: $tipografia;
+    font-size: 2rem;
+    color: $negro
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+  background-color: $naranjita;
+  @include flex (row, space-between, center);
+  padding: 10px 0px;
+
+  .logoTelefono {
+    margin-left: 10px;
+    width: 50px;
+  }
+
+  div {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .iconoInsta {
+      border: 1px solid white;
+      background-color: white;
+      border-radius: 11px;
+      width: 50px;
+      
+    }
+
+    .iconoFb {
+      border-radius: 50%;
+      background-color: white;
+      border-radius: 32px;
+      width: 50px;
+    
+    }
+
+    img {
+      width: 50px;
+    }
+
+    svg {
+      @extend img;
+    }
+
+  }
+}
