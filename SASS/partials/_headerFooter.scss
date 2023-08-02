@@ -6,6 +6,7 @@
 html{
   font-family:'Roboto', sans-serif;
   font-size: 62.5%;
+  
  }
 
 h2{
@@ -60,6 +61,7 @@ footer {
   background-color: $naranjita;
   @include flex (row, space-between, center);
   padding: 10px 0px;
+  
 
   .logoTelefono {
     margin-left: 10px;
