@@ -6,6 +6,13 @@
 html {
   font-family: "Roboto", sans-serif;
   font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 h2 {
@@ -45,6 +52,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 10px 0px;
+  margin-top: auto;
 }
 footer .logoTelefono {
   margin-left: 10px;
@@ -271,10 +279,13 @@ footer div img, footer div svg {
   .tituloIndex p {
     font-size: 15px;
   }
-  .presentacion img, .presentacion footer div svg, footer div .presentacion svg {
-    width: 80px;
+  .presentacion .divPadreFlex {
+    width: 100%;
   }
-  .presentacion p {
+  .presentacion .divPadreFlex img, .presentacion .divPadreFlex footer div svg, footer div .presentacion .divPadreFlex svg {
+    width: 70px;
+  }
+  .presentacion .divPadreFlex p {
     font-size: 15px;
   }
   .presentacion h2 {
@@ -287,13 +298,14 @@ footer div img, footer div svg {
   .contenedor-grid {
     grid-template-areas: "titulo" "foto1" "texto1" "texto2" "foto3" "texto3" "subt";
     grid-template-columns: 90%;
-    grid-template-rows: 150px 350px 200px 100px 100px 100px 300px;
+    grid-template-rows: 200px 250px 250px 200px 150px 150px 300px;
   }
   .grid-img-2 {
     display: none;
   }
   /*FOOTER MOBILE*/
-  footer img, footer div svg, svg {
+  footer img, footer div svg,
+  svg {
     width: 40px;
   }
   footer div {
@@ -302,6 +314,70 @@ footer div img, footer div svg {
     justify-content: space-between;
   }
   footer p {
+    display: none;
+  }
+}
+/*SECCION CONTACTO*/
+.container-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.container-form .info-form {
+  width: 70px;
+}
+.container-form .info-form h1 {
+  font-size: 35px;
+  text-align: center;
+}
+.container-form .info-form h2 {
+  font-size: 25px;
+}
+.container-form .info-form p {
+  font-size: 20px;
+}
+.container-form .info-form .mapa1 {
+  width: 300px;
+}
+.container-form .formularioOG {
+  display: none;
+}
+
+@media only screen and (min-width: 501px) and (max-width: 978px) {
+  body {
+    background-color: gray;
+  }
+  /* section "sobre nosotros"*/
+  .contenedor-grid {
+    grid-template-areas: "titulo" "foto1" "texto1" "texto2" "foto3" "texto3" "subt";
+    grid-template-columns: 90%;
+    grid-template-rows: 200px 350px 150px 200px 150px 150px 300px;
+  }
+  .grid-img-2 {
+    display: none;
+  }
+  /*SECCION CONTACTO*/
+  .container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .container-form .info-form {
+    width: 70px;
+  }
+  .container-form .info-form h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .container-form .info-form h2 {
+    font-size: 25px;
+  }
+  .container-form .info-form p {
+    font-size: 20px;
+  }
+  .container-form .formularioOG {
     display: none;
   }
 }

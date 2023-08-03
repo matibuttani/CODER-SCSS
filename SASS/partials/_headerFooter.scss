@@ -1,23 +1,29 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-html{
-  font-family:'Roboto', sans-serif;
+html {
+  font-family: 'Roboto', sans-serif;
   font-size: 62.5%;
-  
- }
+  height: 100%;
+}
 
-h2{
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+h2 {
   font-size: 4rem;
 }
 
-h3{
+h3 {
   font-size: 3rem;
 }
 
-p{
+p {
   font-size: 2rem;
 }
 
@@ -34,7 +40,6 @@ header {
     background-color: $naranjita;
     font-family: $tipografia;
     font-size: 2rem;
-
   }
 
   .link {
@@ -42,7 +47,6 @@ header {
     font-size: 2rem;
     color: $negro
   }
-
 }
 
 
@@ -61,7 +65,8 @@ footer {
   background-color: $naranjita;
   @include flex (row, space-between, center);
   padding: 10px 0px;
-  
+  margin-top: auto;
+
 
   .logoTelefono {
     margin-left: 10px;
@@ -80,7 +85,6 @@ footer {
       background-color: white;
       border-radius: 11px;
       width: 50px;
-      
     }
 
     .iconoFb {
@@ -88,7 +92,6 @@ footer {
       background-color: white;
       border-radius: 32px;
       width: 50px;
-    
     }
 
     img {
@@ -98,6 +101,5 @@ footer {
     svg {
       @extend img;
     }
-
   }
 }
